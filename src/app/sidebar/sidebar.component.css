@@ -1,0 +1,24 @@
+md-sidenav-container, md-sidenav{
+  
+      min-height:100vh !important;
+  
+      background-color: rgba(255, 255, 255, 0) !important;    
+  
+  }
+  
+  
+  .app-sidenav{
+  
+      margin-top:20px !important;
+  
+  }
+
+  .listview {
+    display: block !important;
+  }
+
+  .md-size {
+    font-size:54px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }

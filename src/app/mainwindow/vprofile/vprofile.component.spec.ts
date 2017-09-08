@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainwindowComponent } from './mainwindow.component';
+import { VProfileComponent } from './vprofile.component';
 
-describe('MainwindowComponent', () => {
-  let component: MainwindowComponent;
-  let fixture: ComponentFixture<MainwindowComponent>;
+describe('VProfileComponent', () => {
+  let component: VProfileComponent;
+  let fixture: ComponentFixture<VProfileComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainwindowComponent ]
+      declarations: [ VProfileComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainwindowComponent);
+    fixture = TestBed.createComponent(VProfileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

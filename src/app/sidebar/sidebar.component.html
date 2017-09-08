@@ -1,0 +1,94 @@
+<md-sidenav-container>
+  <md-sidenav 
+    mode="side" 
+    opened="true"
+    class="app-sidenav"
+  >
+
+  <md-list>
+    <md-list-item class="listview">
+      <a md-icon-button [mdMenuTriggerFor]="menuContacts">
+        <md-icon class="md-size">
+          contacts
+        </md-icon>
+      </a>
+      <md-menu #menuContacts="mdMenu">
+        <a routerLink="/my-contact">
+          <button md-menu-item>
+            My Contacts
+          </button>
+        </a>
+        <a routerLink="/ce-contact">
+            <button md-menu-item>
+              Add New
+            </button>
+          </a>
+      </md-menu>
+    </md-list-item>
+
+    <md-list-item class="listview">
+      <a md-icon-button [mdMenuTriggerFor]="menuDiary">
+          <md-icon class="md-size">
+              library_books
+          </md-icon>
+        </a>
+        <md-menu #menuDiary="mdMenu">
+          <a routerLink="/my-diary">
+            <button md-menu-item>
+              My Diary
+            </button>
+          </a>
+          <a routerLink="/search">
+              <button md-menu-item>
+                Search
+              </button>
+            </a>
+        </md-menu>
+    </md-list-item>
+
+
+
+  <md-list-item class="listview">
+    <a md-icon-button [mdMenuTriggerFor]="menuInfo">
+      <md-icon class="md-size">
+        info
+      </md-icon>
+    </a>
+    <md-menu #menuInfo="mdMenu">
+      <a routerLink="/feeds">
+        <button md-menu-item>
+          Feed on Info
+        </button>
+      </a>
+      <a routerLink="/my-feeds">
+          <button md-menu-item>
+            My feeds
+          </button>
+        </a>
+    </md-menu>
+  </md-list-item>
+
+
+
+  <md-list-item class="listview">
+    <a md-icon-button [mdMenuTriggerFor]="menuIdentity">
+        <md-icon class="md-size">
+            perm_identity
+        </md-icon>
+    </a>
+    <md-menu #menuIdentity="mdMenu">
+      <a routerLink="/ce-profile">
+        <button md-menu-item>
+          View profile
+        </button>
+      </a>
+      <a routerLink="/ce-profile">
+        <button md-menu-item>
+          Edit profile
+        </button>
+      </a>
+    </md-menu>
+  </md-list-item>
+</md-list>
+  </md-sidenav>
+</md-sidenav-container> 
