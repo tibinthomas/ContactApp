@@ -1,3 +1,4 @@
+import { PersonService } from './shared/person.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -39,7 +40,7 @@ import { VContactComponent } from './mainwindow/vcontact/vcontact.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [PersonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

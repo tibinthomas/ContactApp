@@ -1,3 +1,111 @@
-<p>
-  vcontact works!
-</p>
+<table class="ui blue table">
+    
+      <thead>
+    
+        <tr>
+    
+          <th>First Name</th>
+    
+          <th>Middle Name</th>
+    
+          <th>Last Name</th>
+    
+          <th>Email</th>
+    
+          <th>Contact No 1</th>
+    
+          <th>Contact No 2</th>
+    
+        </tr>
+    
+      </thead>
+    
+      <tbody>
+    
+        <tr *ngFor="let person of persons" (contextmenu)="onRightClick($event , person)">
+    
+          <td>{{person.firstName}}</td>
+    
+          <td>{{person.middleName}}</td>
+    
+          <td>{{person.lastName}}</td>
+    
+          <td>{{person.email}}</td>
+    
+          <td>{{person.phoneNo1}}</td>
+    
+          <td>{{person.phoneNo2}}</td>
+    
+        </tr>
+    
+      </tbody>
+    
+      <tfoot class="full-width">
+    
+        <tr>
+    
+          <th></th>
+    
+          <th colspan="6">
+    
+              <div class="ui pagination menu">
+    
+                <a class="active item">
+    
+                    <<
+    
+                </a>
+    
+                <div class="item">
+    
+                    <
+    
+                </div>
+    
+                <a class="item">
+    
+                  1
+    
+                </a>
+    
+                <a class="item">
+    
+                  2
+    
+                </a>
+    
+                <a class="item">
+    
+                  3
+    
+                </a>
+    
+                <a class="item">
+    
+                  >
+    
+                </a>
+    
+                <a class="item">
+    
+                  >>
+    
+                </a>
+    
+              </div>
+    
+          </th>
+    
+        </tr>
+    
+      </tfoot>  
+    
+    </table>
+    
+    <div class="ui items app-contact-extra-menu" *ngIf="selectedPerson" >
+    
+        <div class="item"> <a routerLink="/v-profile/{{selectedPerson.id}}" routerLinkActive="active">View</a></div>
+    
+        <div class="item"><a routerLink="/ce-profile/{{selectedPerson.id}}" routerLinkActive="active">Edit</a></div>
+    
+    </div>

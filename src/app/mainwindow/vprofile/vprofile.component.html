@@ -10,7 +10,7 @@
   
           <h3 class="ui header">
   
-            Fist Name Middle Name Last Name
+            {{ selectedPerson.firstName }} {{ selectedPerson.middleName }} {{selectedPerson.lastName}} Name Last Name
   
           </h3>
   
@@ -18,45 +18,39 @@
   
           <div>
   
-            <strong>DOB:</strong>30/01/2017
+            <strong>DOB:</strong>{{ selectedPerson.dateOfBirth }}
   
           </div>
   
           <div>
   
-            <strong>Age:</strong>3
+            <strong>Age:</strong> {{ selectedPerson.age }}
   
           </div>
   
           <div>
   
-            <strong>Email:</strong>sure@gmail.com
+            <strong>Email:</strong>{{ seletedPerson.email }}
   
           </div>
   
           <div>
   
-            <strong>Contact No 1:</strong>9656565656
+            <strong>Contact No 1:</strong>{{ selectedPerson.phoneNo1 }}
   
           </div>
   
           <div>
   
-            <strong>Contact No 2:</strong>9565995655
+            <strong>Contact No 2:</strong>{{ selectedPerson.phoneNo2 }}
   
           </div>
   
           <div>
   
-            <strong>Address:</strong>N0:123 , Main Street. City. State. Country.
+            <strong>Address:</strong>{{ selectedPerson.address }}
   
           </div>
-  
-          <div>
-  
-              <strong>About Me:</strong>haha.
-  
-            </div>
   
         </div>
   

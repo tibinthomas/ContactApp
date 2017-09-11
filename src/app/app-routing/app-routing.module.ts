@@ -9,15 +9,15 @@ import { CommonModule } from '@angular/common';
 
 const routingData: Routes = [
   { path: 'my-contact', component: MyContactsComponent },
-  { path: 'ce-contact', component: CEContactComponent },
-  { path: 'ce-profile', component: CEProfileComponent },
+  { path: 'ce-contact/:id', component: CEContactComponent },
+  { path: 'ce-profile/:id', component: CEProfileComponent },
   { path: 'v-contacts', component: VContactComponent },
-  { path: 'v-profile', component: VProfileComponent }
+  { path: 'v-profile/:id', component: VProfileComponent }
 ];
 
 @NgModule({
   imports: [
-    CommonModule,
+    CommonModule,  
     RouterModule.forRoot(routingData)
   ],
 
