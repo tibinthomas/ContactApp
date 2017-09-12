@@ -9,8 +9,8 @@ import { CommonModule } from '@angular/common';
 
 const routingData: Routes = [
   { path: 'v-contacts', component: VContactComponent },
-  { path: 'ce-contact/:?id', component: CEContactComponent },
-  { path: 'ce-profile', component: CEProfileComponent },
+  { path: 'ce-contact/:id', component: CEContactComponent },
+  { path: 'ce-profile/:id', component: CEProfileComponent },
   { path: 'v-contacts/:id', component: VContactComponent },
   { path: 'v-profile/:id', component: VProfileComponent }
 ];

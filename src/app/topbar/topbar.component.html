@@ -4,8 +4,27 @@
             <a routerLink="/" style="cursor: pointer" class="navbar-brand">Contact App</a>
             <ul class="nav navbar-nav navbar-right">
                 
-                    <li><a routerLink="/">Picture</a></li>
-                    <li><a routerLink="/"> User <span class="caret"></span> </a></li>
+                    <li><a routerLink="/v-profile/1"><i class="fa fa-user fa-4x" aria-hidden="true"></i>
+                    </a></li>
+                    <!-- <li><a routerLink="/"> {{ user.firstName }} <span class="caret"></span> </a></li> -->
+                    <a md-icon-button [mdMenuTriggerFor]="menuInfo">
+                            {{ user.firstName }}
+                            <md-icon class="md-size">
+                             <span class="caret"></span>
+                            </md-icon>
+                          </a>
+                          <md-menu #menuInfo="mdMenu">
+                            <a routerLink="ce-profile/1">
+                              <button md-menu-item>
+                                Edit Info
+                              </button>
+                            </a>
+                            <a routerLink="/v-profile/1">
+                                <button md-menu-item>
+                                  View Profile
+                                </button>
+                              </a>
+                          </md-menu>
             </ul> 
         </div>
     </div>
