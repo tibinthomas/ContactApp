@@ -1,6 +1,6 @@
 <div id="edit-profile">
     
-        <form class="ui form">
+        <form [formGroup]="ceProfileForm" class="ui form" (ngSubmit)="onSubmit(ceProfileForm.value)">
     
           <div class="ui grid">
     
@@ -12,7 +12,7 @@
     
                       <label>First Name</label>
     
-                      <input type="text" name="first-name" placeholder="Alvin">
+                      <input name="firstName" type="text" placeholder="Alvin" formControlName="firstName">
     
                     </div>
     
@@ -20,7 +20,7 @@
     
                       <label>Middle Name</label>
     
-                      <input type="text" name="last-name" placeholder="Clane">
+                      <input name="middleName" type="text" placeholder="Clane" formControlName="middleName">
     
                     </div>
     
@@ -28,7 +28,7 @@
     
                       <label>DOB</label>
     
-                      <input type="text" name="last-name" placeholder="01-01-2017">
+                      <input name="dateOfBirth" type="text" placeholder="01-01-2017" formControlName="dateOfBirth">
     
                     </div>
     
@@ -40,7 +40,7 @@
     
                       <label>Last Name</label>
     
-                      <input type="text" name="last-name" placeholder="Muskitter">
+                      <input name="lastName" type="text" placeholder="Muskitter" formControlName="lastName">
     
                     </div>
     

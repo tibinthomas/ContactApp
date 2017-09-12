@@ -1,256 +1,257 @@
 <div id="add-contact">
-        <form class="example-form">
-    
-          <div class="ui grid">
-    
-            <div class="three column row">
-    
-              <div class="column">
-    
-                <div class="column">
-    
-                    <md-form-field class="example-full-width">
-    
-                      <input mdInput placeholder="First Name" [formControl]="emailFormControl">
-    
-                      <md-error *ngIf="emailFormControl.hasError('pattern')">
-    
-                        Please enter a valid email address
-    
-                      </md-error>
-    
-                      <md-error *ngIf="emailFormControl.hasError('required')">
-    
-                        Email is <strong>required</strong>
-    
-                      </md-error>
-    
-                    </md-form-field>
-    
-                </div>
-    
-                <div class="column">
-    
-                    <md-form-field class="example-full-width">
-    
-                      <input mdInput placeholder="Last Name" [formControl]="emailFormControl">
-    
-                      <md-error *ngIf="emailFormControl.hasError('pattern')">
-    
-                        Please enter a valid email address
-    
-                      </md-error>
-    
-                      <md-error *ngIf="emailFormControl.hasError('required')">
-    
-                        Email is <strong>required</strong>
-    
-                      </md-error>
-    
-                    </md-form-field>
-    
-                </div>
-    
-                <div class="column">
-    
-                    <md-form-field class="example-full-width">
-    
-                      <input mdInput placeholder="Phone Number 1" [formControl]="emailFormControl">
-    
-                      <md-error *ngIf="emailFormControl.hasError('pattern')">
-    
-                        Please enter a valid email address
-    
-                      </md-error>
-    
-                      <md-error *ngIf="emailFormControl.hasError('required')">
-    
-                        Email is <strong>required</strong>
-    
-                      </md-error>
-    
-                    </md-form-field>
-    
-                </div>
-    
-                <div class="column">
-    
-                    <md-form-field class="example-full-width">
-    
-                      <input mdInput placeholder="Phone Number 2" [formControl]="emailFormControl">
-    
-                      <md-error *ngIf="emailFormControl.hasError('pattern')">
-    
-                        Please enter a valid email address
-    
-                      </md-error>
-    
-                      <md-error *ngIf="emailFormControl.hasError('required')">
-    
-                        Email is <strong>required</strong>
-    
-                      </md-error>
-    
-                    </md-form-field>
-    
-                </div>
-    
-                
-    
-              </div>
-    
-              <div class="column">
-    
-                  <div class="column">
-    
-                      <md-form-field class="example-full-width">
-    
-                        <input mdInput placeholder="Middle Name" [formControl]="emailFormControl">
-    
-                        <md-error *ngIf="emailFormControl.hasError('pattern')">
-    
-                          Please enter a valid email address
-    
-                        </md-error>
-    
-                        <md-error *ngIf="emailFormControl.hasError('required')">
-    
-                          Email is <strong>required</strong>
-    
-                        </md-error>
-    
-                      </md-form-field>
-    
-                  </div>
-    
-                <div class="column">
-    
-                    <md-form-field class="example-full-width">
-    
-                      <input mdInput placeholder="DOB" [formControl]="emailFormControl">
-    
-                      <md-error *ngIf="emailFormControl.hasError('pattern')">
-    
-                        Please enter a valid email address
-    
-                      </md-error>
-    
-                      <md-error *ngIf="emailFormControl.hasError('required')">
-    
-                        Email is <strong>required</strong>
-    
-                      </md-error>
-    
-                    </md-form-field>
-    
-                </div>
-    
-                <div class="column">
-    
-                    <md-form-field class="example-full-width">
-    
-                      <input mdInput placeholder="Middle Name" [formControl]="emailFormControl">
-    
-                      <md-error *ngIf="emailFormControl.hasError('pattern')">
-    
-                        Please enter a valid email address
-    
-                      </md-error>
-    
-                      <md-error *ngIf="emailFormControl.hasError('required')">
-    
-                        Email is <strong>required</strong>
-    
-                      </md-error>
-    
-                    </md-form-field>
-    
-                </div>
-    
-                <div class="column">
-    
-                    <md-form-field class="example-full-width">
-    
-                      <input mdInput placeholder="Permanent Address" [formControl]="emailFormControl">
-    
-                      <md-error *ngIf="emailFormControl.hasError('pattern')">
-    
-                        Please enter a valid email address
-    
-                      </md-error>
-    
-                      <md-error *ngIf="emailFormControl.hasError('required')">
-    
-                        Email is <strong>required</strong>
-    
-                      </md-error>
-    
-                    </md-form-field>
-    
-                </div>
-    
-              </div>
-    
-              <div class="column">
-    
-                <div class="column">
-    
-                    <md-form-field class="example-full-width">
-    
-                      <input mdInput placeholder="Alternate Address" [formControl]="emailFormControl">
-    
-                      <md-error *ngIf="emailFormControl.hasError('pattern')">
-    
-                        Please enter a valid email address
-    
-                      </md-error>
-    
-                      <md-error *ngIf="emailFormControl.hasError('required')">
-    
-                        Email is <strong>required</strong>
-    
-                      </md-error>
-    
-                    </md-form-field>
-    
-                </div>
-    
-                <div class="column">
-    
-                  Image
-    
-                </div>
-    
-                <div class="column">
-    
-                  <md-form-field class="example-full-width">
-    
-                    <input mdInput  placeholder="Upload image">
-    
-                  </md-form-field>
-    
-                </div>
-    
-              </div>
-    
+  
+    <form class="example-form">
+
+      <div class="ui grid">
+
+        <div class="three column row">
+
+          <div class="column">
+
+            <div class="column">
+
+                <md-form-field class="example-full-width">
+
+                  <input mdInput placeholder="First Name" [formControl]="emailFormControl">
+
+                  <md-error *ngIf="emailFormControl.hasError('pattern')">
+
+                    Please enter a valid email address
+
+                  </md-error>
+
+                  <md-error *ngIf="emailFormControl.hasError('required')">
+
+                    Email is <strong>required</strong>
+
+                  </md-error>
+
+                </md-form-field>
+
             </div>
-    
-            <div class="row">
-    
-                <div class="column">
-    
-                  <button md-raised-button>Save</button>
-    
-                  <button md-raised-button color="primary">clear</button>
-    
-                  <button md-raised-button color="accent">cancel</button>
-    
-                </div>
-    
+
+            <div class="column">
+
+                <md-form-field class="example-full-width">
+
+                  <input mdInput placeholder="Last Name" [formControl]="emailFormControl">
+
+                  <md-error *ngIf="emailFormControl.hasError('pattern')">
+
+                    Please enter a valid email address
+
+                  </md-error>
+
+                  <md-error *ngIf="emailFormControl.hasError('required')">
+
+                    Email is <strong>required</strong>
+
+                  </md-error>
+
+                </md-form-field>
+
             </div>
-    
+
+            <div class="column">
+
+                <md-form-field class="example-full-width">
+
+                  <input mdInput placeholder="Phone Number 1" [formControl]="emailFormControl">
+
+                  <md-error *ngIf="emailFormControl.hasError('pattern')">
+
+                    Please enter a valid email address
+
+                  </md-error>
+
+                  <md-error *ngIf="emailFormControl.hasError('required')">
+
+                    Email is <strong>required</strong>
+
+                  </md-error>
+
+                </md-form-field>
+
+            </div>
+
+            <div class="column">
+
+                <md-form-field class="example-full-width">
+
+                  <input mdInput placeholder="Phone Number 2" [formControl]="emailFormControl">
+
+                  <md-error *ngIf="emailFormControl.hasError('pattern')">
+
+                    Please enter a valid email address
+
+                  </md-error>
+
+                  <md-error *ngIf="emailFormControl.hasError('required')">
+
+                    Email is <strong>required</strong>
+
+                  </md-error>
+
+                </md-form-field>
+
+            </div>
+
+            
+
           </div>
-    
-        </form>
-    
-    </div>
+
+          <div class="column">
+
+              <div class="column">
+
+                  <md-form-field class="example-full-width">
+
+                    <input mdInput placeholder="Middle Name" [formControl]="emailFormControl">
+
+                    <md-error *ngIf="emailFormControl.hasError('pattern')">
+
+                      Please enter a valid email address
+
+                    </md-error>
+
+                    <md-error *ngIf="emailFormControl.hasError('required')">
+
+                      Email is <strong>required</strong>
+
+                    </md-error>
+
+                  </md-form-field>
+
+              </div>
+
+            <div class="column">
+
+                <md-form-field class="example-full-width">
+
+                  <input mdInput placeholder="DOB" [formControl]="emailFormControl">
+
+                  <md-error *ngIf="emailFormControl.hasError('pattern')">
+
+                    Please enter a valid email address
+
+                  </md-error>
+
+                  <md-error *ngIf="emailFormControl.hasError('required')">
+
+                    Email is <strong>required</strong>
+
+                  </md-error>
+
+                </md-form-field>
+
+            </div>
+
+            <div class="column">
+
+                <md-form-field class="example-full-width">
+
+                  <input mdInput placeholder="Middle Name" [formControl]="emailFormControl">
+
+                  <md-error *ngIf="emailFormControl.hasError('pattern')">
+
+                    Please enter a valid email address
+
+                  </md-error>
+
+                  <md-error *ngIf="emailFormControl.hasError('required')">
+
+                    Email is <strong>required</strong>
+
+                  </md-error>
+
+                </md-form-field>
+
+            </div>
+
+            <div class="column">
+
+                <md-form-field class="example-full-width">
+
+                  <input mdInput placeholder="Permanent Address" [formControl]="emailFormControl">
+
+                  <md-error *ngIf="emailFormControl.hasError('pattern')">
+
+                    Please enter a valid email address
+
+                  </md-error>
+
+                  <md-error *ngIf="emailFormControl.hasError('required')">
+
+                    Email is <strong>required</strong>
+
+                  </md-error>
+
+                </md-form-field>
+
+            </div>
+
+          </div>
+
+          <div class="column">
+
+            <div class="column">
+
+                <md-form-field class="example-full-width">
+
+                  <input mdInput placeholder="Alternate Address" [formControl]="emailFormControl">
+
+                  <md-error *ngIf="emailFormControl.hasError('pattern')">
+
+                    Please enter a valid email address
+
+                  </md-error>
+
+                  <md-error *ngIf="emailFormControl.hasError('required')">
+
+                    Email is <strong>required</strong>
+
+                  </md-error>
+
+                </md-form-field>
+
+            </div>
+
+            <div class="column">
+
+              Image
+
+            </div>
+
+            <div class="column">
+
+              <md-form-field class="example-full-width">
+
+                <input mdInput  placeholder="Upload image">
+
+              </md-form-field>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="column">
+
+              <button md-raised-button>Save</button>
+
+              <button md-raised-button color="primary">clear</button>
+
+              <button md-raised-button color="accent">cancel</button>
+
+            </div>
+
+        </div>
+
+      </div>
+
+    </form>
+
+</div>

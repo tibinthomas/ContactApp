@@ -1,8 +1,8 @@
-import { Subject } from 'rxjs/Rx';
+// import { Subject } from 'rxjs/Rx';
 import { Person } from './person.model';
-import { Injectable } from '@angular/core';
+// mport { Injectable } from '@angular/core';
 
-@Injectable()
+// @Injectable()
 export class PersonService {
 
   // personChanged = new Subject<Person[]>();
@@ -13,6 +13,7 @@ export class PersonService {
     {
       id: 1,
       firstName: 'Tibin',
+      middleName: 'Punnoose',
       lastName: 'Thomas',
       dateOfBirth: '05-07-1993',
       age: 24,
@@ -26,7 +27,7 @@ export class PersonService {
 
     {
       id: 2,
-      firstName: 'Tibin',
+      firstName: 'Tibi',
       lastName: 'Thomas',
       dateOfBirth: '05-07-1993',
       age: 24,
@@ -40,7 +41,7 @@ export class PersonService {
 
     {
       id: 3,
-      firstName: 'Tibin',
+      firstName: 'Tib',
       lastName: 'Thomas',
       dateOfBirth: '05-07-1993',
       age: 24,
@@ -71,5 +72,8 @@ deletePerson(index: number) {
   // this.personChanged.next(this.persons.slice());
 }
 
+addPerson(newPerson: Person) {
+  this.persons.push(newPerson);
+}
 
 }

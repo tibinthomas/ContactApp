@@ -1,5 +1,5 @@
 import { PersonService } from './shared/person.service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
@@ -38,7 +38,7 @@ import { VContactComponent } from './mainwindow/vcontact/vcontact.component';
     MdMenuModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [PersonService],
   bootstrap: [AppComponent]
