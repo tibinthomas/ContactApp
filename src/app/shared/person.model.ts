@@ -11,4 +11,5 @@ export interface Person {
          phoneNo2?: number;
          email?: string;
          alternateAddress?: string;
+         imageLink?: string;
 }

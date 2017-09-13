@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FilePickerModule } from 'angular-file-picker';
 
 import { MdSidenavModule, MdIconModule, MdButtonModule, MdMenuModule } from '@angular/material';
 
@@ -39,6 +40,7 @@ import { VContactComponent } from './mainwindow/vcontact/vcontact.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    FilePickerModule
   ],
   providers: [PersonService],
   bootstrap: [AppComponent]
